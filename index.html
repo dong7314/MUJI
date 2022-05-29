@@ -18,24 +18,32 @@
       <div class="wrap">
         <div class="header-top">
           <div class="logo"><img src="./img/header/muji_logo.svg" alt="logo"></div>
-          <div class="search-box">
-            <input type="search" class="search-bar"><div class="search-icon"></div>
-            <div class="guide-banner">
-              <div class="top">
+          <div class="search-box search-active">
+            <input type="search" class="search-bar search-active"><div class="search-icon"></div>
+            <div class="guide-banner search-active">
+              <div class="top search-active">
                 <a href="#">최근 검색어</a>
-                <a href="#">인기 검색어</a>
+                <a href="#" class="on">인기 검색어</a>
               </div>
-              <div class="popular-search">
-
+              <div class="popular-search search-active">
+                <div class="popular-box search-active"></div>
+                <div class="popular-text search-active">최근 검색어 내역이 없습니다.</div>
               </div>
-              <div class="latest-search">
-                <ul>
-                  <li>1. 케이스</li>
-                  <li>2. 파자마</li>
-                  <li>3. 파우치</li>
-                  <li>4. 슬리퍼</li>
-                  <li>5. 모자</li>
+              <div class="latest-search search-active">
+                <ul class="search-active">
+                  <li class="search-active">1. 케이스</li>
+                  <li class="search-active">2. 파자마</li>
+                  <li class="search-active">3. 파우치</li>
+                  <li class="search-active">4. 슬리퍼</li>
+                  <li class="search-active">5. 모자</li>
                 </ul>
+              </div>
+              <div class="guide-footer search-active">
+                <div class="guide-footer-left search-active">자동저장 끄기</div>
+                <div class="guide-footer-right search-active">
+                  <span class="delete search-active">전체삭제</span>
+                  <span>닫기</span>
+                </div>
               </div>
             </div>
           </div>
@@ -70,27 +78,272 @@
           <div id="lnb">
             <ul>
               <li><h2>의복/신발/패션잡화</h2></li>
-              <li><a href="#">MUJI LABO</a></li>
-              <li><a href="#">남성복</a></li>
-              <li><a href="#">여성복</a></li>
-              <li><a href="#">아동복 · 마터니티</a></li>
-              <li><a href="#">이너웨어</a></li>
-              <li><a href="#">가방 · 신발</a></li>
-              <li><a href="#">액세서리 · 양말 · 우산</a></li>
+              <li>
+                <a href="#">MUJI LABO</a>
+                <div class="sub-panel">
+                  <ul>
+                    <li><h2>MUJI LABO ></h2></li>
+                    <li><a>유니섹스 LABO</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">남성복</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>남성복 ></h2></li>
+                    <li><a>남성니트</a></li>
+                    <li><a>남성컷앤소</a></li>
+                    <li><a>남성 셔츠</a></li>
+                    <li><a>남성아웃트탑</a></li>
+                    <li><a>남성하의</a></li>
+                    <li><a>남성 MUJIWALKER</a></li>
+                    <li><a>워싱 저지 · 티셔츠</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>워싱 저지 · 티셔츠</h2></li>
+                    <li><a><div class="img-place sub-panel-2"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">여성복</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>여성복 ></h2></li>
+                    <li><a>여성니트</a></li>
+                    <li><a>여성컷앤소</a></li>
+                    <li><a>여성 셔츠</a></li>
+                    <li><a>여성아웃트탑</a></li>
+                    <li><a>여성하의</a></li>
+                    <li><a>여성 MUJIWALKER</a></li>
+                    <li><a>프렌치 리넨 워싱 · 슬리브리스 원피스</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>프렌치 리넨 워싱 · 슬리브리스 원피스</h2></li>
+                    <li><a><div class="img-place sub-panel-3"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">아동복 · 마터니티</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>아동복 · 마터니티 ></h2></li>
+                    <li><a>베이비 (48개월 미만)</a></li>
+                    <li><a>키즈 (48개월 이상)</a></li>
+                    <li><a>아동 악세서리</a></li>
+                    <li><a>마터니티 · 신생아</a></li>
+                    <li><a>여성하의</a></li>
+                    <li><a>프렌치 리넨 · 블라우스 · 베이비</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>프렌치 리넨 · 블라우스 · 베이비</h2></li>
+                    <li><a><div class="img-place sub-panel-4"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">이너웨어</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>이너웨어 ></h2></li>
+                    <li><a>남성 이너웨어</a></li>
+                    <li><a>남성파자마 · 홈웨어</a></li>
+                    <li><a>여성 이너웨어</a></li>
+                    <li><a>여성파자마 · 홈웨어</a></li>
+                    <li><a>사이드 심리스 저지 · 티셔츠 2장 세트</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>사이드 심리스 저지 · 티셔츠 2장 세트</h2></li>
+                    <li><a><div class="img-place sub-panel-5"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">가방 · 신발</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>가방 · 신발 ></h2></li>
+                    <li><a>남성가방 · 벨트</a></li>
+                    <li><a>남성화</a></li>
+                    <li><a>여성가방</a></li>
+                    <li><a>여성화</a></li>
+                    <li><a>여행가방</a></li>
+                    <li><a>높이 조절이 가능한 · 스토퍼 하드 캐리어 36L</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>높이 조절이 가능한 · 스토퍼 하드 캐리어 36L</h2></li>
+                    <li><a><div class="img-place sub-panel-6"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">액세서리 · 양말 · 우산</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>악세서리 · 양말 우산 ></h2></li>
+                    <li><a>양말</a></li>
+                    <li><a>스타킹 · 레깅스</a></li>
+                    <li><a>모자</a></li>
+                    <li><a>스카프 · 머플러</a></li>
+                    <li><a>우산 · 레인코트</a></li>
+                    <li><a>소품</a></li>
+                    <li><a>논슬립 · 풋커버</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>논슬립 · 풋커버</h2></li>
+                    <li><a><div class="img-place sub-panel-7"></div></a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
             <ul>
               <li><a href="#"><h2>생활잡화</h2></a></li>
-              <li><a href="#">패브릭</a></li>
-              <li><a href="#">가구 · 인테리어</a></li>
-              <li><a href="#">주방 · 생활용품</a></li>
-              <li><a href="#">헬스&뷰티 · 아로마</a></li>
-              <li><a href="#">화장품</a></li>
-              <li><a href="#">전자제품 · 기프트</a></li>
-              <li><a href="#">문구</a></li>
+              <li>
+                <a href="#">패브릭</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>패브릭 ></h2></li>
+                    <li><a>이불 · 깔개 패드</a></li>
+                    <li><a>베개</a></li>
+                    <li><a>모포 · 덮개</a></li>
+                    <li><a>침장 패브릭</a></li>
+                    <li><a>카페트</a></li>
+                    <li><a>쿠션</a></li>
+                    <li><a>리빙 패브릭</a></li>
+                    <li><a>욕실 패브릭</a></li>
+                    <li><a>타월</a></li>
+                    <li><a>슬리퍼</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>워싱면 이불 커버</h2></li>
+                    <li><a><div class="img-place sub-panel-8"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">가구 · 인테리어</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>가구 · 인테리어 ></h2></li>
+                    <li><a>침대 · 매트리스</a></li>
+                    <li><a>소파 · 리빙 가구</a></li>
+                    <li><a>다이닝 가구</a></li>
+                    <li><a>데스크</a></li>
+                    <li><a>수납 가구 · 화장대</a></li>
+                    <li><a>유닛선반 · 수납선반</a></li>
+                    <li><a>수납 캐비닛</a></li>
+                    <li><a>데코 · 벽걸이 가구</a></li>
+                    <li><a>목제 코트행거</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>목제 코트행거</h2></li>
+                    <li><a><div class="img-place sub-panel-9"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">주방 · 생활용품</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>주방 · 생활용품 ></h2></li>
+                    <li><a>하우스키핑 용품</a></li>
+                    <li><a>욕실 화장실 용품</a></li>
+                    <li><a>정리용품</a></li>
+                    <li><a>부엌 용품</a></li>
+                    <li><a>테이블 용품</a></li>
+                    <li><a>아동 테이블 용품</a></li>
+                    <li><a>Found 하우스키핑</a></li>
+                    <li><a>카페트 클리너</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>카페트 클리너</h2></li>
+                    <li><a><div class="img-place sub-panel-10"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">헬스&뷰티 · 아로마</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>헬스&뷰티 · 아로마 ></h2></li>
+                    <li><a>케어 용품</a></li>
+                    <li><a>아로마 용품</a></li>
+                    <li><a>위생용품</a></li>
+                    <li><a>바디 용품</a></li>
+                    <li><a>헤어 관련 용품</a></li>
+                    <li><a>화장소품</a></li>
+                    <li><a>여행 · 보틀 · 파우치</a></li>
+                    <li><a>아로마 디퓨저</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>아로마 디퓨저</h2></li>
+                    <li><a><div class="img-place sub-panel-11"></div></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">화장품</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>화장품 ></h2></li>
+                    <li><a>스킨케어</a></li>
+                    <li><a>관련 용품</a></li>
+                    <li><a>메이크업 · 색조</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">전자제품 · 기프트</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>전자제품 · 기프트 ></h2></li>
+                    <li><a>가전제품 · 시계</a></li>
+                    <li><a>조명기구</a></li>
+                    <li><a>삼륜차</a></li>
+                    <li><a>가든용품</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">문구</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>문구 ></h2></li>
+                    <li><a>노트</a></li>
+                    <li><a>필기구</a></li>
+                    <li><a>파일</a></li>
+                    <li><a>사무용품</a></li>
+                    <li><a>커뮤니케이션</a></li>
+                    <li><a>완구</a></li>
+                    <li><a>아크릴 케이스 가로형 · 5단</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>아크릴 케이스 가로형 · 5단</h2></li>
+                    <li><a><div class="img-place sub-panel-12"></div></a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
             <ul>
               <li><a href="#"><h2>식품</h2></a></li>
-              <li><a href="#">과자 · 음료 · 소스</a></li>
+              <li>
+                <a href="#">과자 · 음료 · 소스</a>
+                <div class="sub-panel">
+                  <ul class="list-area">
+                    <li><h2>과자 · 음료 · 소스 ></h2></li>
+                    <li><a>과자 · 스낵</a></li>
+                    <li><a>음료</a></li>
+                    <li><a>요리의 소스</a></li>
+                    <li><a>바움쿠헨 시리즈</a></li>
+                  </ul>
+                  <ul class="image-area">
+                    <li><h2>바움쿠헨 시리즈</h2></li>
+                    <li><a><div class="img-place sub-panel-13"></div></a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
           <div id="main">

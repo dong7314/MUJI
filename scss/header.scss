@@ -65,6 +65,89 @@
         background-repeat: no-repeat;
         cursor: pointer;
       }
+      .guide-banner {
+        display: none;
+        position: absolute;
+        width: 570px;
+        padding: 0 30px;
+        background-color: white;
+        box-sizing: border-box;
+        z-index: 5;
+        .top {
+          width: 100%;
+          display: flex;
+          a {
+            display: block;
+            padding: 12px 0;
+            width: 50%;
+            height: 43.2px;
+            text-align: center;
+            font-size: 13px;
+            border-bottom: 1px solid #e1e1e1;
+            color: #8c8c8c;
+            box-sizing: border-box;
+            &.on {
+              color: black;
+              border-bottom: 1px solid black;
+            }
+          }
+        }
+        .popular-search {
+          padding-top: 20px;
+          text-align: center;
+          display: none;
+          .popular-box {
+            margin-top: 35px;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-image: url('../img/sch_empty_bg.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          .popular-text {
+            font-size: 13px;
+            padding: 5px 0 20px;
+          }
+        }
+        .latest-search {
+          display: block;
+          ul {
+            padding: 20px 0;
+            li {
+              font-size: 13px;
+              margin-bottom: 10px;
+              cursor: pointer;
+            }
+          }
+        }
+        .guide-footer {
+          display: block;
+          padding-bottom: 20px;
+          overflow: hidden;
+          .guide-footer-left {
+            display: none;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            float: left;
+          }
+          .guide-footer-right {
+            float: right;
+            span {
+              color: #8c8c8c;
+              font-size: 13px;
+              cursor: pointer;
+              &:first-child {
+                display: none;
+                padding-right: 10px;
+                margin-right: 10px;
+                border-right: 2px solid #ededed;
+              }
+            }
+          }
+        }
+      }
     }
     .link-items {
       grid-column-start: 6;
