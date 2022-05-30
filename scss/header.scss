@@ -38,6 +38,7 @@
     .logo {
       height: 40px;
       grid-column-start: 1;
+      cursor: pointer;
     }
     .search-box {
       position: relative;
@@ -161,6 +162,7 @@
           width: 32px;
           height: 32px;
           background-size: cover;
+          cursor: pointer;
           &:nth-child(1) {
             background: url('../img/header/icon_login.svg');
           }
